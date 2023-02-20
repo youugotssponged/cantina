@@ -6,13 +6,6 @@ defmodule Cantina do
   end
 
   def process_response_body(body) do
-    body
-      |> Poison.decode!(body)
+    body |> Poison.decode!
   end
-  # def find do
-  #   HTTPoison.start
-  #   response = HTTPoison.get!("https://swapi.dev/api/people/2/?format=json")
-  #   jsonify = JSON.decode(response.body)
-  #   IO.inspect jsonify
-  # end
 end
